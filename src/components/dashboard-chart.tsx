@@ -13,10 +13,10 @@ export const DashboardChart = () => {
 		<Card className='col-span-4'>
 			<CardHeader className='flex flex-row justify-between items-center'>
 				<CardTitle>Sales Trends</CardTitle>
-				<div className='flex items-center gap4'>
+				<div className='flex items-center gap-4'>
 					<span>Sort by:</span>
 					<Select>
-						<SelectTrigger className='w-[80px] rounded-full'>
+						<SelectTrigger className='w-[100px] rounded-full'>
 							<SelectValue placeholder='Weekly' />
 						</SelectTrigger>
 						<SelectContent>

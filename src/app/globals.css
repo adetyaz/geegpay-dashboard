@@ -95,3 +95,40 @@
 ::-webkit-scrollbar-thumb:hover {
 	background: #979797;
 }
+
+.theme-switcher {
+	position: relative;
+	display: inline-block;
+	background-color: #ddd;
+	border-radius: 20px;
+	padding: 5px;
+}
+
+.theme-button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 5px 10px;
+	border-radius: 15px;
+	transition: background-color 0.3s ease;
+}
+
+.theme-button.active {
+	background-color: lightgreen;
+}
+
+.slider {
+	position: absolute;
+	background-color: lightgreen;
+	border-radius: 15px;
+	top: 5px;
+	bottom: 5px;
+	left: 5px;
+	right: 50%;
+	transition: right 0.3s ease, left 0.3s ease;
+}
+
+.slider.dark {
+	right: 5px;
+	left: 50%;
+}

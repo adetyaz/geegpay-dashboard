@@ -47,9 +47,9 @@ export const SideNav = () => {
 						},
 					]}
 				/>
+				<ThemeSwitcher />
 			</div>
 
-			{/* <ThemeSwitcher /> */}
 			<div className='place-content-end'>
 				<Nav
 					links={[

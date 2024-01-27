@@ -32,9 +32,21 @@ const ThemeSwitcher = () => {
 	}
 
 	return (
-		<button onClick={toggleTheme}>
-			{theme === 'light' ? '🌞' : '🌜'} {/* Replace with your icons */}
-		</button>
+		<div className='theme-switcher'>
+			<div className={`slider ${theme}`}></div>
+			<button
+				className={`theme-button ${theme === 'light' ? 'active' : ''}`}
+				onClick={() => setTheme('light')}
+			>
+				🌞 Light
+			</button>
+			<button
+				className={`theme-button ${theme === 'dark' ? 'active' : ''}`}
+				onClick={() => setTheme('dark')}
+			>
+				🌜 Dark
+			</button>
+		</div>
 	)
 }
 
