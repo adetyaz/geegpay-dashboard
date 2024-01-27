@@ -49,18 +49,20 @@ export const SummaryCard = () => {
 	return (
 		<>
 			{data.map((summary: any) => (
-				<Card className='w-[12rem] h-fit'>
+				<Card className='w-[12rem] h-fit' key={summary.title}>
 					<CardHeader key={summary.title} className='p-2'>
 						<div className='text-sm w-full font-medium flex flex-row items-center justify-between '>
 							{summary.icon}
-							<SummaryChart tag={summary.tag} trend={summary.trend} />
+							<SummaryChart trend={summary.trend} />
 						</div>
 						<CardTitle className='text-sm text-[#898989]'>
 							{summary.title}
 						</CardTitle>
 					</CardHeader>
 					<CardContent className='p-2'>
-						<div className='text-2xl font-bold'>{summary.amount}</div>
+						<div className='text-2xl text-[#3A3F51] font-bold'>
+							{summary.amount}
+						</div>
 						<div className='flex gap-2 items-center'>
 							{summary.trend === 'upward' ? (
 								<p className='flex gap-2 items-center text-xs rounded-full p-1  text-[#34CAA5] bg-[#34CAA542]'>

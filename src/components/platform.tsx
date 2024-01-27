@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardTitle, CardContent } from './ui/card'
-import { Progress } from './ui/progress'
+
 import { useState } from 'react'
 
 const data = [
@@ -66,7 +66,7 @@ export function Platform() {
 			</CardHeader>
 			<CardContent className='grid gap-y-8'>
 				{data.map((platform) => (
-					<div>
+					<div key={platform.name}>
 						<h3 className='font-bold'>{platform.name}</h3>
 						<div className='w-full h-3 my-2 bg-[#f5f5f5] rounded-full overflow-hidden'>
 							<div
