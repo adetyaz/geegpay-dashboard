@@ -98,37 +98,40 @@
 
 .theme-switcher {
 	position: relative;
-	display: inline-block;
-	background-color: #ddd;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #ffffff;
 	border-radius: 20px;
-	padding: 5px;
+	padding: 3px;
+	width: 60px;
 }
 
 .theme-button {
 	background: none;
 	border: none;
 	cursor: pointer;
-	padding: 5px 10px;
-	border-radius: 15px;
+	padding: 10px 5px;
+	border-radius: 100%;
 	transition: background-color 0.3s ease;
 }
 
 .theme-button.active {
-	background-color: lightgreen;
+	background-color: #34caa5;
 }
 
 .slider {
 	position: absolute;
-	background-color: lightgreen;
+	background-color: #34caa5;
 	border-radius: 15px;
 	top: 5px;
-	bottom: 5px;
+	bottom: 50%;
 	left: 5px;
-	right: 50%;
-	transition: right 0.3s ease, left 0.3s ease;
+	right: 5px;
+	transition: top 0.3s ease, bottom 0.3s ease;
 }
 
 .slider.dark {
-	right: 5px;
-	left: 50%;
+	top: 50%;
+	bottom: 5px;
 }

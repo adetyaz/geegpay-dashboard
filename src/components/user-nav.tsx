@@ -22,7 +22,7 @@ export function UserNav() {
 					</Avatar>
 					<DropdownMenuLabel className='font-normal'>
 						<div className='flex flex-col space-y-1'>
-							<p className='text-sm text-black'>Justin Bergson</p>
+							<p className='text-sm text-black dark:white'>Justin Bergson</p>
 							<p className='text-xs text-muted-foreground'>justin@gmail.com</p>
 						</div>
 					</DropdownMenuLabel>
